@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Younus</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: rainbow;
+        }
+        header {
+            background-color: blue;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: black;
+            text-decoration: none;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border: 2px solid yellow;
+            border-radius: 10px;
+            margin: 10px;
+            width: 150px;
+            text-align: center;
+            transition: transform 0.2s;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #3D3C3A;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .card a {
+            text-decoration: none;
+            color: black;
+            display: block;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card {
+                width: 100%; /* Make cards full width on smaller screens */
+                max-width: 300px; /* Limit the maximum width */
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+
+        @media (min-width: 769px) {
+            .container {
+                justify-content: space-between; /* Distribute cards evenly on larger screens */
+                padding: 30px;
+            }
+            .card {
+                width: 180px; /* Slightly larger cards for desktop view */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <marquee><h1>WELCOME</h1></marquee>
+    <nav>
+        <a href="#">Home</a>
+        <a href="https://mnmyounus.github.io/contact-us">Contact us</a>
+    </nav>
+</header>
+
+<div class="container" id="card-container">
+    <div class="card">
+        <a href="https://mnmyounus.github.io/ycertificate">
+            <img src="certificate.jpg" alt="certificates">
+            <p>CERTIFICATES</p>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://mnmyounus.github.io/yalbum">
+            <img src="ya.jpg" alt="album">
+            <p>ALBUM</p>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://mnmyounus.github.io/ysocial">
+            <img src="social.jpg" alt="social media">
+            <p>SOCIAL MEDIA LINKS</p>
+        </a>
+    </div>
+    <div class="card">
+        <a href="https://www.younus.netfy.me">
+            <img src="ga.jpg" alt="games&apps">
+            <p>GAMES & APPS</p>
+        </a>
+</div>
+    <div class="card">
+        <a href="https://mnmyounus.github.io/yim">
+            <img src="yim.jpg" alt="important">
+            <p>Important</p>
+        </a>
+
+        </div>
+    
+<footer>
+    <p>Copyright &copy; and &reg; | YOUNUS</p>
+</footer>
+
+</body>
+</html>
+
